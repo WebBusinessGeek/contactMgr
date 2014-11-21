@@ -6,7 +6,7 @@
  * Time: 10:21 PM
  */
 
-class Role {
+class Roles {
 
     public $roles = [
 
