@@ -23,19 +23,20 @@ class RoleCommandController {
         $this->repository = new RoleRepository();
     }
 
-
+    /**Retrieves all roles available on the Role class
+     * @return array
+     */
     public function retrieveAllRoles()
     {
        return $this->invoker->getAllRoles($this->factory->createNewRolesObject());
 
     }
 
-    //retrieve single
-
-        //facotry create new - done
-
-        //invoker to return specific by key - done
-
+    /**
+     * Retrieves a specific role available on the Role class
+     * @param $key
+     * @return mixed
+     */
     public function retrieveSpecificRole($key)
     {
         return $this->invoker->getSpecificRole($this->factory->createNewRolesObject(), $key);

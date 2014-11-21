@@ -12,6 +12,10 @@ namespace App\MyStuff\ContactDirectory\RoleDirectory;
 class RoleFactory {
 
 
+    /**
+     * Creates a new instance of the Roles class
+     * @return Roles
+     */
     public function createNewRolesObject()
     {
         return new Roles();

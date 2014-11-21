@@ -26,7 +26,7 @@ class Roles {
 
         'IT',
 
-        'Management',
+        'Management'
 
     ];
 
