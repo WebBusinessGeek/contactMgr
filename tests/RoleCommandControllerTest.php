@@ -9,11 +9,17 @@
 namespace tests;
 
 
+use App\MyStuff\ContactDirectory\RoleDirectory\RoleCommandController;
+
 class RoleCommandControllerTest extends \PHPUnit_Framework_TestCase {
 
-    public function test_something()
+    public function test_roleCommandCtrl_retrieveAllRoles_method_retrieves_all_roles()
     {
+        $roleCommandController = new RoleCommandController();
 
+        $this->assertEquals(true, is_array($roleCommandController->retrieveAllRoles()));
     }
+
+    
 
 }

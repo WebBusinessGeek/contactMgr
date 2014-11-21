@@ -25,4 +25,15 @@ class RoleInvokerTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals(true, is_array($roleInvoker->getAllRoles($roles)));
     }
 
+    public function test_roleInvoker_getSpecificRole_method_gets_a_single_role_on_roles_object()
+    {
+        $roleFactory = new RoleFactory();
+
+        $roles = $roleFactory->createNewRolesObject();
+
+        $roleInvoker = new RoleInvoker();
+
+        $this->assertEquals('Customer Support', $roleInvoker->getSpecificRole($roles, 1));
+    }
+
 }

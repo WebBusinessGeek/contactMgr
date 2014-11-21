@@ -15,4 +15,9 @@ class RoleInvoker {
         return $roles->roles;
     }
 
+    public function getSpecificRole(Roles $roles, $key)
+    {
+        return $roles->roles[--$key];
+    }
+
 }
