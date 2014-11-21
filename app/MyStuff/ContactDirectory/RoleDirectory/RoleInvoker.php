@@ -6,6 +6,13 @@
  * Time: 10:22 PM
  */
 
+namespace App\MyStuff\ContactDirectory\RoleDirectory;
+
 class RoleInvoker {
+
+    public function getAllRoles(Roles $roles)
+    {
+        return $roles->roles;
+    }
 
 }

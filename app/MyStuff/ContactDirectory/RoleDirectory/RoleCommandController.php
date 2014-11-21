@@ -13,13 +13,13 @@ class RoleCommandController {
 
     //retrieve all
 
-        //factory create new
+        //factory create new - done
 
-        //invoker to return all
+        //invoker to return all - done
 
     //retrieve single
 
-        //facotry create new
+        //facotry create new - done
 
         //invoker to return specific by key
 
