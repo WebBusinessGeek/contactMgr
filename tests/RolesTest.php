@@ -22,6 +22,7 @@ class RolesTest extends \PHPUnit_Framework_TestCase {
 
 
         $this->assertEquals(true, is_array($role->roles));
+        $this->assertEquals('Customer Support', $role->roles[0]);
     }
 
 }
