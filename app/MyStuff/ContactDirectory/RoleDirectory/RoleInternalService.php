@@ -23,13 +23,23 @@ class RoleInternalService {
         $this->commandValidator = new RoleCommandValidator();
     }
 
+    
+    /**
+     * retrieves all roles from the Roles class
+     * @return array
+     */
+    public function retrieveAllRoles()
+    {
+        return $this->commandController->retrieveAllRoles();
+    }
 
-
-    //retrieve all roles - both json and non json
-
-        //commandcontroller calls method
-
-        //commandresponse converts them json
+    /**retrieves all roles from the Roles class and converts to json
+     * @return string
+     */
+    public function retrieveAllRolesJson()
+    {
+        return $this->responder->sendJsonFormat($this->retrieveAllRoles());
+    }
 
 
     //retrieve a specific role - both json and non json
