@@ -18,7 +18,7 @@ class RoleInternalServiceTest extends \PHPUnit_Framework_TestCase {
 
     }
 
-    public function test_roleInternalService_retrieveAllRolesJson_method_recieves_all_roles_and_responds_in_json()
+    public function test_roleInternalService_retrieveAllRolesJson_method_receives_all_roles_and_responds_in_json()
     {
 
     }

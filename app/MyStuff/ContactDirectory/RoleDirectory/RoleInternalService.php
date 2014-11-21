@@ -10,6 +10,20 @@ namespace App\MyStuff\ContactDirectory\RoleDirectory;
 
 class RoleInternalService {
 
+    public $commandController;
+
+    public $responder;
+
+    public $commandValidator;
+
+    function __construct()
+    {
+        $this->commandController = new RoleCommandController();
+        $this->responder = new RoleResponder();
+        $this->commandValidator = new RoleCommandValidator();
+    }
+
+
 
     //retrieve all roles - both json and non json
 
