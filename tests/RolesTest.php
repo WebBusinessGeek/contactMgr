@@ -25,4 +25,33 @@ class RolesTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('Customer Support', $role->roles[0]);
     }
 
+    public function test_roles_roles_property_contains_correct_values()
+    {
+        $correctValues = [
+
+            'Customer Support',
+
+            'Business/Admin Support',
+
+            'Marketing',
+
+            'Sales',
+
+            'Developer',
+
+            'Designer',
+
+            'IT',
+
+            'Management',
+        ];
+
+        $roles = new Roles();
+
+        for($count = 0; $count < count($correctValues); $count++)
+        {
+            $this->assertEquals($correctValues[$count], $roles->roles[$count]);
+        }
+    }
+
 }
