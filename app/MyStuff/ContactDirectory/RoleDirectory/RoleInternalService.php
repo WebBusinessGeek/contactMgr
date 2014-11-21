@@ -11,14 +11,14 @@ namespace App\MyStuff\ContactDirectory\RoleDirectory;
 class RoleInternalService {
 
 
-    //retrieve all roles
+    //retrieve all roles - both json and non json
 
         //commandcontroller calls method
 
         //commandresponse converts them json
 
 
-    //retrieve a specific role
+    //retrieve a specific role - both json and non json
 
         //commandvalidator checks argument
 
