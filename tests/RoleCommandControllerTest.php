@@ -20,6 +20,11 @@ class RoleCommandControllerTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals(true, is_array($roleCommandController->retrieveAllRoles()));
     }
 
-    
+    public function test_roleCommandCtrl_retrieveSpecificRole_method_retrieves_a_specific_role()
+    {
+        $rolecommandController = new RoleCommandController();
+
+        $this->assertEquals('Customer Support', $rolecommandController->retrieveSpecificRole(1));
+    }
 
 }

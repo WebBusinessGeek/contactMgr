@@ -24,13 +24,6 @@ class RoleCommandController {
     }
 
 
-
-    //retrieve all
-
-        //factory create new - done
-
-        //invoker to return all - done
-
     public function retrieveAllRoles()
     {
        return $this->invoker->getAllRoles($this->factory->createNewRolesObject());
@@ -43,5 +36,9 @@ class RoleCommandController {
 
         //invoker to return specific by key - done
 
+    public function retrieveSpecificRole($key)
+    {
+        return $this->invoker->getSpecificRole($this->factory->createNewRolesObject(), $key);
+    }
 
 }

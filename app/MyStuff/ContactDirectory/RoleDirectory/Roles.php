@@ -12,7 +12,7 @@ class Roles {
 
     public $roles = [
 
-        'Customer Support',
+        'Customer Support',//*this must stay the first value or tests will break*
 
         'Business/Admin Support',
 
