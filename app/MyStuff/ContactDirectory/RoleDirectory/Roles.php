@@ -6,6 +6,8 @@
  * Time: 10:21 PM
  */
 
+namespace App\MyStuff\ContactDirectory\RoleDirectory;
+
 class Roles {
 
     public $roles = [
