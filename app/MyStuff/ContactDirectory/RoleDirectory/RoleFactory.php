@@ -6,6 +6,16 @@
  * Time: 10:22 PM
  */
 
+
+namespace App\MyStuff\ContactDirectory\RoleDirectory;
+
 class RoleFactory {
+
+
+    public function createNewRolesObject()
+    {
+        return new Roles();
+    }
+
 
 }
